@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        body{
+            background-color:#cdfaff;
+        }
+        #container{
+            margin: auto;
+            height: 800px;
+            width: 70%;
+            background-color:#ff8bcf;
+        }
+        #left{
+            position: relative;
+            float: left;
+            height: 800px;
+            width: 15%;
+            background-color: #dae1ff;
+
+        }
+        #left_01{
+            width: 100%;
+            height:90px;
+            background-color: #3b28ff;
+
+        }
+        #left_02{
+            width: 100%;
+            height: 90px;
+            background-color: #30BDED;
+        }
+        #right{
+            position: relative;
+            float: left;
+            height: 800px;
+            width: 85%;
+        }
+        #top{
+            height: 80px;
+            width: 100%;
+            background-color: #ff3fae;
+        }
+        #middle{
+            height: 600px;
+            width: 100%;
+            background-color: #fdeaff;
+            box-shadow: 1px 1px 10px red;
+        }
+        [id^="middle0"]{
+            width: 100%;
+            height: 80px;
+
+        }
+        [id^=middate]{
+            width: 60%;
+            height: 20px;
+            margin: auto;
+             text-align: center;
+            background-color: #A9A9A9;
+        }
+        [id^=midname]{
+            width: 15%;
+            height: 60px;
+            position: relative;
+            background-color: #238a64;
+            float: left;
+        }
+       [id^=midcontent]{
+            width: 85%;
+            height: 60px;
+            position: relative;
+            background-color: #30BDED;
+            float: right;
+
+        }
+        #middle01{
+           //background-color: #E83838;
+        }
+        #bottom{
+            height: 120px;
+            width: 100%;
+            background-color: #ffb9e9;
+        }
+
+    </style>
+</head>
+<script>
+    var messages=[{"name":"关卫明","id":"302735803","date":"2016/3/19","content":"hello!"},
+        {"name":"王钰涛","id":"945105423","date":"2016/3/19","content":"hello hi!"}
+     ]
+    window.onload=function(){
+       //document.getElementById("middate01").innerHTML=messages[0].date;
+       //document.getElementById( "midname01").innerHTML=messages[0].name;
+        //document.getElementById("midcontent01").innerHTML=messages[0].content;
+        fun1("01",0);
+        fun1("02",1);
+        //document.getElementById("middate02").innerText=messages[1].date;
+        //document.getElementById( "midname02").innerText=messages[1].name;
+        //document.getElementById("midcontent02").innerText=messages[1].content;
+    }
+    function fun1(id,k){
+        document.getElementById("middate"+id).innerHTML=messages[k].date;
+        document.getElementById( "midname"+id).innerHTML=messages[k].name;
+        document.getElementById("midcontent"+id).innerHTML=messages[k].content;
+    }
+</script>
+<body>
+<body>
+<div id="container">
+    <div id="left">
+        <div id="left_01"></div>
+        <div id="left_02"></div>
+
+    </div>
+    <div id="right">
+        <div id="top"></div>
+        <div id="middle">
+            <div id="middle01" >
+                <div id="middate01"></div>
+                <div id="midname01"></div>
+                <div id="midcontent01"></div>
+            </div>
+            <div id="middle02">
+                <div id="middate02"></div>
+                <div id="midname02"></div>
+                <div id="midcontent02"></div>
+
+
+            </div>
+            <div id="middle03">3</div>
+            <div id="middle04">4</div>
+            <div id="middle05">5</div>
+        </div>
+        <div id="bottom"></div>
+    </div>
+</div>
+
+</body>
+</body>
+</html>
